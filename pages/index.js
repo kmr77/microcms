@@ -4,7 +4,7 @@ import { client } from "../libs/client";
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <div className={styles.container}>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
