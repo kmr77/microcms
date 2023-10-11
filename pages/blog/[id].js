@@ -1,5 +1,6 @@
 import { client } from '../../libs/client';
 import styles from '../../styles/css/Home.module.css';
+import Link from "next/link";
 
 export default function BlogId({ blog }) {
   return (
@@ -12,6 +13,7 @@ export default function BlogId({ blog }) {
         }}
         className={styles.post}
       />
+      <button><Link href={`/`}>TOPへ戻る</Link></button>
     </main>
   );
 }
