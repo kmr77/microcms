@@ -1,10 +1,14 @@
 import styles from '../styles/css/Home.module.css'
 import Link from "next/link";
 import { client } from "../libs/client";
+import { Header } from '../components/Header';
+import { Headline } from '../components/Headline';
 
 export default function Home({ blog ,category, tag}) {
   return (
     <>
+    <Header  title="とっぷ" discription="インデックスDisc"/>
+    <Headline/>
       <div className={styles.container}>
         <ul>
           {tag.map((tag) => (
