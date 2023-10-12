@@ -1,6 +1,6 @@
-import styles from '../../styles/css/Home.module.css'
+import styles from '/components/css/Home.module.css'
 import Link from "next/link";
-import { client } from "../../libs/client";
+import { client } from "/libs/client";
 
 export default function tagId({ blog }) {
   // タグに紐付いたコンテンツがない場合に表示

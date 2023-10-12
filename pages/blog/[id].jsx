@@ -1,5 +1,5 @@
-import { client } from '../../libs/client';
-import styles from '../../styles/css/Home.module.css';
+import { client } from '/libs/client';
+import styles from '/components/css/Home.module.css';
 import Link from "next/link";
 
 export default function BlogId({ blog }) {
