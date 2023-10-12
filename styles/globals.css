@@ -59,16 +59,3 @@ img {
     display: block !important;
   }
 }
-.content {
-  padding-top: 90px;
-}
-@media (max-width: 1225px) {
-  .content {
-    padding-top: 110px;
-  }
-}
-@media (max-width: 767px) {
-  .content {
-    padding-top: 50px;
-  }
-}
