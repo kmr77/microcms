@@ -1,0 +1,73 @@
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  background-color: #F7F7F7;
+  padding: 8px 0 12px;
+  margin-bottom: 0;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+.breadcrumb li {
+  font-size: 1.1rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: ">";
+  margin: 0 10px;
+  font-family: "Consolas";
+}
+
+.breadcrumb li a {
+  color: #7b7b7b;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.breadcrumb li a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+.breadcrumb li .not_found,
+.breadcrumb li span {
+  color: #7b7b7b;
+}
+
+.breadcrumb li:last-child a {
+  text-decoration: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  color: #7b7b7b;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+    overflow-x: scroll;
+  }
+  .breadcrumb-list {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  .breadcrumb li {
+    font-size: 1.3rem;
+  }
+  .breadcrumb li a {
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=breadcrumb.module.css.map */
