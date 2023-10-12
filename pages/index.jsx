@@ -3,12 +3,14 @@ import Link from "next/link";
 import { client } from "/libs/client";
 import { Header } from '/components/Header';
 import { Headline } from '/components/Headline';
+import { MainVisual } from '/components/MainVisual';
 
 export default function Home({ blog ,category, tag}) {
   return (
     <>
     <Header  title="とっぷ" discription="インデックスDisc"/>
     <Headline/>
+    <MainVisual />
       <div>
         <ul>
           {tag.map((tag) => (
