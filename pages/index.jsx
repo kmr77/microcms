@@ -5,7 +5,6 @@ import { Header } from '/components/Header';
 import { Headline } from '/components/Headline';
 import { MainVisual } from '/components/MainVisual';
 import Breadcrumb from 'components/Breadcrumb';
-import TopContents from 'components/TopContents';
 
 export default function Home({ blog ,category, tag}) {
   return (
@@ -17,7 +16,13 @@ export default function Home({ blog ,category, tag}) {
         <Breadcrumb />
         <div className={`${styles.top_section} ${styles.arrival}`}>
           <div className={styles.inner}>
-            <TopContents />
+          <h2 className={styles.primary_title}>
+                <span className={styles.primary_title_ico}></span>
+                <div className={styles.primary_title_txt}>
+                    <p className={styles.jp}>新着の記事</p>
+                    <p className={styles.en}>LATEST ARTICLE</p>
+                </div>
+            </h2>
             <ul>
             
               <li>
