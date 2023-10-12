@@ -89,13 +89,13 @@
   padding-left: 50px;
 }
 
-.nav__logo_img {
+.nav__logo-img {
   display: block;
   margin-right: 30px;
   width: 100px;
 }
 
-.nav__logo_text {
+.nav__logo-text {
   font-size: 1.1rem;
   line-height: 1.5;
   width: calc(100% - 130px);
@@ -317,6 +317,151 @@
   .nav__mainmenu {
     padding-left: 0;
     padding-right: 15px;
+  }
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 16px;
+  }
+  .nav__list_item_ico {
+    padding-left: 20px;
+  }
+  .nav__list_item_ico a,
+.nav__list_item_ico .pcmenu__search {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: #1C1C1C;
+    transition: 0.3s;
+  }
+  .nav__list_item_ico a:before,
+.nav__list_item_ico .pcmenu__search:before {
+    display: block;
+    content: "";
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+  }
+  .nav__list_item_ico a:after,
+.nav__list_item_ico .pcmenu__search:after {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: "wnm_head";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .nav__list_item_ico a:hover,
+.nav__list_item_ico .pcmenu__search:hover {
+    color: #FF8311;
+  }
+  .nav__list_item_ico.guide a:after {
+    content: "\e901";
+  }
+  .nav__list_item_ico.journal a:after {
+    content: "\e907";
+  }
+  .nav__list_item_ico.log a:after {
+    content: "\e902";
+  }
+  .nav__list_item_ico.search a:after {
+    content: "\e904";
+  }
+  .nav__list_item_ico.search .pcmenu__search:after {
+    content: "\e904";
+  }
+  .nav__list_item_ico.fav a:after {
+    content: "\e900";
+    font-size: 35px;
+  }
+  .nav__list_item_ico.fav .num {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+    padding-top: 3px;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .nav__list_item_ico.fav a:hover .num {
+    background-color: #FF8311;
+  }
+  .nav__list_item_ico.request a:after {
+    content: "\e903";
+  }
+  .nav__list_item_ico span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+  .nav__requesttel .title {
+    display: block;
+    border: 1px solid #1C1C1C;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1C1C1C;
+    padding: 5px 5px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+  }
+  .nav__requesttel a {
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #1C1C1C;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    padding-left: 25px;
+    transition: 0.3s;
+    vertical-align: middle;
+  }
+  .nav__requesttel a:before {
+    display: block;
+    position: absolute;
+    content: "\e906";
+    font-family: "wnm_head";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    bottom: -1px;
+    left: 0;
+  }
+  .nav__requesttel a .txt svg {
+    overflow: inherit;
+  }
+  .nav__requestbtn {
+    border-radius: 0.9rem;
+    background-color: #FF8311;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: -0.1rem;
+    line-height: 2.4rem;
+    padding: 0 1.2rem;
+    transition: 0.3s;
   }
   .nav__list {
     font-size: 0.85rem;
