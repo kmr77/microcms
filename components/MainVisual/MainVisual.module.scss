@@ -57,11 +57,13 @@
     text-align: center;
     padding: 13px 0;
   }
-  .mv_under p {
+  .mv_under_txt {
     font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: 1px;
+    margin: 0;
   }
+
   @media (max-width: 767px) {
     .mv_under {
       text-align: left;
@@ -71,3 +73,35 @@
       line-height: 1.6;
     }
   }
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* 共通 */
+.sponly {
+  display: none !important;
+}
+
+.tabonly {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .tabonly {
+    display: inherit;
+  }
+}
+@media (max-width: 767px) {
+  .tabonly {
+    display: none;
+  }
+  .pconly {
+    display: none !important;
+  }
+  .sponly {
+    display: block !important;
+  }
+}
