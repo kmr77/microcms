@@ -18,10 +18,35 @@ export default function Home({ blog ,category, tag}) {
         <div className={`${styles.top_section} ${styles.arrival}`}>
           <div className={styles.inner}>
             <TopContents />
+            <ul>
+            
+              <li>
+              </li>
+            
+          </ul>
+          <ul className={`${styles.article_list} ${styles.arrival} ${styles.top}`}>
+          {blog.map((blog) => (
+          <li key={blog.id} className={styles.articles_item}>
+            <Link className={styles.articles_img} href={`/blog/${blog.id}`}>
+            </Link>
+            <div className={styles.articles_content}>
+              <div className={styles.articles_author}></div>
+              <p className={styles.articles_date}></p>
+              <Link className={styles.articles_link} href={`/blog/${blog.id}`}>
+              {blog.title}
+                <h3 className={styles.articles_title}></h3>
+              </Link>
+              <p className={styles.articles_category}>
+                <span className={styles.articles_category_item}></span>
+              </p>
+            </div>
+          </li>
+          ))}
+          </ul>
           </div>
         </div>
         <div>
-          <ul>
+          {/* <ul>
             {tag.map((tag) => (
               <li key={tag.id}>
                 <Link href={`/tag/${tag.id}`}>{tag.name}</Link>
@@ -34,31 +59,8 @@ export default function Home({ blog ,category, tag}) {
                 <Link href={`/category/${category.id}`}>{category.name}</Link>
               </li>
             ))}
-          </ul>
-          <ul>
-            {blog.map((blog) => (
-              <li key={blog.id}>
-                <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <ul className={`${styles.article_list} ${styles.arrival} ${styles.top}`}>
-        <li className={styles.articles_item}>
-          <a className={styles.articles_img} href={`/`}>
-          </a>
-          <div className={styles.articles_content}>
-            <div className={styles.articles_author}></div>
-            <p className={styles.articles_date}></p>
-            <a className={styles.articles_link} href={`/`}>
-              <h3 className={styles.articles_title}></h3>
-            </a>
-            <p className={styles.articles_category}>
-              <span className={styles.articles_category_item}></span>
-            </p>
+          </ul> */}
           </div>
-        </li>
-        </ul>
       </div>
       </>
   );
