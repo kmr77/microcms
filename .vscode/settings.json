@@ -1,3 +1,4 @@
 {
-    "dartsass.targetDirectory": "styles/css"
+    "dartsass.targetDirectory": "components/css/",
+    "dartsass.outputFormat": "cssonly"
 }
