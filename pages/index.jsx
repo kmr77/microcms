@@ -40,8 +40,7 @@ export default function Home({ blog ,category, tag}) {
               <div className={styles.articles_author}></div>
               <p className={styles.articles_date}></p>
               <Link className={styles.articles_link} href={`/blog/${blog.id}`}>
-              {blog.title}
-                <h3 className={styles.articles_title}></h3>
+                <h3 className={styles.articles_title}>{blog.title}</h3>
               </Link>
               <p className={styles.articles_category}>
                 {category.map((category) => (
