@@ -296,6 +296,10 @@
   color: #7b7b7b;
   text-decoration: none;
 }
+.article_list.arrival.top {
+  margin: 0;
+  padding: 0;
+}
 .article_list.arrival .articles_item:nth-child(1), .article_list.arrival .articles_item:nth-child(2), .article_list.arrival .articles_item:nth-child(3) {
   width: 33.33%;
 }
@@ -490,7 +494,7 @@
   text-decoration: none;
 }
 .article_list.arrival .articles_item:nth-child(1), .article_list.arrival .articles_item:nth-child(2), .article_list.arrival .articles_item:nth-child(3) {
-  width: 33.33%;
+  width: 30.83%;
 }
 .article_list.arrival .articles_item:nth-child(1) .articles_img, .article_list.arrival .articles_item:nth-child(2) .articles_img, .article_list.arrival .articles_item:nth-child(3) .articles_img {
   height: 226px;
