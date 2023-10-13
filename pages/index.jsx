@@ -44,30 +44,24 @@ export default function Home({ blog ,category, tag}) {
                 <h3 className={styles.articles_title}></h3>
               </Link>
               <p className={styles.articles_category}>
-                <span className={styles.articles_category_item}></span>
+                {category.map((category) => (
+                    <span key={category.id} className={styles.articles_category_item}>
+                      <Link href={`/category/${category.id}`}>{category.name}</Link><span>　/　</span>
+                    </span>
+                ))}
+                {tag.map((tag) => (
+                  <span key={tag.id} className={styles.articles_category_item}>
+                    <Link href={`/tag/${tag.id}`}>{tag.name}</Link><span>　/　</span>
+                  </span>
+                ))}
               </p>
+              
             </div>
           </li>
           ))}
           </ul>
           </div>
         </div>
-        <div>
-          {/* <ul>
-            {tag.map((tag) => (
-              <li key={tag.id}>
-                <Link href={`/tag/${tag.id}`}>{tag.name}</Link>
-              </li>
-            ))}
-          </ul>
-          <ul>
-            {category.map((category) => (
-              <li key={category.id}>
-                <Link href={`/category/${category.id}`}>{category.name}</Link>
-              </li>
-            ))}
-          </ul> */}
-          </div>
       </div>
       </>
   );

@@ -285,14 +285,14 @@
 .article_list .articles_category-item {
   color: #7b7b7b;
 }
-.article_list .articles_category-item a {
+.article_list .articles_category_item a {
   color: #7b7b7b;
   font-size: 1.1rem;
   line-height: 1.4;
   text-decoration: underline;
   transition: 0.3s;
 }
-.article_list .articles_category-item a:hover {
+.article_list .articles_category_item a:hover {
   color: #7b7b7b;
   text-decoration: none;
 }
@@ -342,7 +342,7 @@
   .article_list .articles_date {
     font-size: 1.3rem;
   }
-  .article_list .articles_category-item a {
+  .article_list .articles_category_item a {
     display: inline-block;
     font-size: 1.3rem;
     margin-bottom: 5px;
@@ -479,17 +479,19 @@
   opacity: 0.8;
   text-decoration: underline;
 }
-.article_list .articles_category-item {
+.article_list .articles_category_item {
   color: #7b7b7b;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
-.article_list .articles_category-item a {
+.article_list .articles_category_item a {
   color: #7b7b7b;
   font-size: 1.1rem;
   line-height: 1.4;
   text-decoration: underline;
   transition: 0.3s;
 }
-.article_list .articles_category-item a:hover {
+.article_list .articles_category_item a:hover {
   color: #7b7b7b;
   text-decoration: none;
 }
@@ -535,7 +537,7 @@
   .article_list .articles_date {
     font-size: 1.3rem;
   }
-  .article_list .articles_category-item a {
+  .article_list .articles_category_item a {
     display: inline-block;
     font-size: 1.3rem;
     margin-bottom: 5px;
