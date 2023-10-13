@@ -23,16 +23,18 @@ export default function Home({ blog ,category, tag}) {
                     <p className={styles.en}>LATEST ARTICLE</p>
                 </div>
             </h2>
-            <ul>
-            
-              <li>
-              </li>
-            
-          </ul>
           <ul className={`${styles.article_list} ${styles.arrival} ${styles.top}`}>
           {blog.map((blog) => (
           <li key={blog.id} className={styles.articles_item}>
             <Link className={styles.articles_img} href={`/blog/${blog.id}`}>
+              {blog.image ? (
+                <picture>
+                  <source srcSet={blog.image.url + "?w=160&h=160&fit=crop&dpr=2 2x"} />
+                  <img src={blog.image.url + "?w=160&h=160&fit=crop"} alt="" />
+                </picture>
+              ) : (
+                  <div className={styles.noImage} />
+                )}
             </Link>
             <div className={styles.articles_content}>
               <div className={styles.articles_author}></div>
