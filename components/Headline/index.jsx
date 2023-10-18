@@ -14,7 +14,7 @@ export function Headline(props) {
           <div className={styles.nav__logo}>
             <Link legacyBehavior href="/">
               <a className={styles.nav__logo_img}>
-                <Image src="img/logo_wnm.svg" alt="ろご" width={160} height={66} />
+                <Image src="/img/logo_wnm.svg" alt="ろご" width={160} height={66} />
                 {/* <img src="" loading="lazy" alt="W＆M（ウィークリー＆マンスリー）" /> */}
               </a>
             </Link>
