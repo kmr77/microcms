@@ -27,7 +27,6 @@ export default function BlogId({ blog, category }) {
               <span className={styles.entry_year}>2023</span>
             </time>
           </div>
-          </article>
           <div className={styles.article_flex}>
             <div className={styles.article_main}>
               <h1 className={styles.title}>{blog.title}</h1>
@@ -56,6 +55,7 @@ export default function BlogId({ blog, category }) {
             </div>
             <Side />
           </div>
+          </article>
         </div>
       </div>
     </div>

@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* 共通 */
+.sponly {
+  display: none !important;
+}
+
+.tabonly {
+  display: none;
+}
+
 .content {
   padding-top: 90px;
 }
@@ -108,7 +117,7 @@
 }
 
 .article_main {
-  width: calc(100% - 300px);
+  width: calc(100% - 380px);
   padding-right: 80px;
 }
 

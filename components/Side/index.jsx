@@ -53,7 +53,6 @@ export default function Side() {
                 </li>
                 </ul>
 
-              <div className={`${styles.migratory_section} ${styles.category}`}>
                 <h2 className={`${styles.primary_title} ${styles.is_underlayer}`}>
                   <div className={styles.primary_title_txt}>
                     <p className={styles.jp}>カテゴリーから探す</p>
@@ -93,7 +92,6 @@ export default function Side() {
                     <a href="https://weeklyandmonthly.com/journal/category/%e3%83%9a%e3%83%83%e3%83%88/" className={styles.category_link}><span>ペット</span></a>
                   </li>
                 </ul>
-              </div>
             </div>
         </>
     );
