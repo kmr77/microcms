@@ -7,7 +7,10 @@ export default function Side() {
         <>
             <div className={styles.article_side}>
               <div className={styles.side_banner}>
-                <a href="https://fukuuro-kaitori.jp/?utm_medium=banner&amp;utm_source=weeklyandmonthly&amp;utm_campaign=2023winter" target="_blank" id="vector_bnr" data-gtm-vis-recent-on-screen12254151_123="5083" data-gtm-vis-first-on-screen12254151_123="5083" data-gtm-vis-total-visible-time12254151_123="100" data-gtm-vis-has-fired12254151_123="1"><img src="https://weeklyandmonthly.com/journal/wp-content/themes/wpjournal/img/fukuuro_bnr_600_500.jpg" alt="ブランド古着宅配買取" className={styles.pconly} /><img src="https://weeklyandmonthly.com/journal/wp-content/themes/wpjournal/img/fukuuro_bnr_640_200.jpg" alt="ブランド古着宅配買取" className={styles.sponly} /></a>
+                <a href="https://fukuuro-kaitori.jp/?utm_medium=banner&amp;utm_source=weeklyandmonthly&amp;utm_campaign=2023winter" target="_blank" id="vector_bnr" data-gtm-vis-recent-on-screen12254151_123="5083" data-gtm-vis-first-on-screen12254151_123="5083" data-gtm-vis-total-visible-time12254151_123="100" data-gtm-vis-has-fired12254151_123="1">
+                    <img src="https://weeklyandmonthly.com/journal/wp-content/themes/wpjournal/img/fukuuro_bnr_600_500.jpg" alt="ブランド古着宅配買取" className={styles.pconly} />
+                    <img src="https://weeklyandmonthly.com/journal/wp-content/themes/wpjournal/img/fukuuro_bnr_640_200.jpg" alt="ブランド古着宅配買取" className={styles.sponly} />
+                </a>
               </div>
 
               <h2 className={`${styles.primary_title} ${styles.is_underlayer}`}>
