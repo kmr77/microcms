@@ -1,10 +1,11 @@
 import { client } from '/libs/client';
-import styles from '/components/css/Home.module.css';
+import styles from '/components/css/Article.module.css';
 import Link from "next/link";
 import Breadcrumb from 'components/Breadcrumb';
 import { Headline } from 'components/Headline';
 import { Header } from 'components/Header';
 import Side from 'components/Side';
+import Sns from 'components/Sns';
 
 export default function BlogId({ blog, category }) {
   return (
@@ -12,8 +13,8 @@ export default function BlogId({ blog, category }) {
     <Header title="記事詳細" discription="記事詳細のDisc" />
     <Headline />
     <div className={styles.content}>
-      <div className={styles.page_article}>
           <Breadcrumb />
+      <div className={styles.page_article}>
         <div className={styles.inner}>
           <article>
           <div className={styles.article_thumb}>
@@ -28,34 +29,9 @@ export default function BlogId({ blog, category }) {
           </div>
           </article>
           <div className={styles.article_flex}>
-            <div className={styles.main}>
+            <div className={styles.article_main}>
               <h1 className={styles.title}>{blog.title}</h1>
-              <div className={styles.sns_intro}>
-                <div className={styles.sns_container}>
-                  <ul className={styles.sns_list}>
-                    <li className={`${styles.sns_list_cont} ${styles.facebook}`}>
-                      <a className={styles.sns_list_link} href="http://www.facebook.com/share.php?u=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
-                        <i className={`${styles.sns_list_ico} ${styles.fab} ${styles.fa_facebook}`}></i><span>シェア</span>
-                      </a>
-                    </li>
-                    <li className={`${styles.sns_list_cont} ${styles.twitter}`}>
-                      <a className={styles.sns_list_link} href="https://twitter.com/share?url=<?php echo get_the_permalink();?>&text=<?php echo get_the_title();?>" target="_blank" rel="nofollow noopener">
-                        <i className={`${styles.sns_list_ico} ${styles.fab} ${styles.fa_twitter}`}></i><span>ツイート</span>
-                      </a>
-                    </li>
-                    <li className={`${styles.sns_list_cont} ${styles.line}`}>
-                      <a className={`${styles.sns_list_link}`} href="https://social-plugins.line.me/lineit/share?url=<?php echo get_the_permalink(); ?>" target="_blank" rel="nofollow noopener">
-                        <i className={`${styles.sns_list_ico} ${styles.fab} ${styles.fa_line}`}></i><span>LINEで送る</span>
-                      </a>
-                    </li>
-                    <li className={`${styles.sns_list_cont} ${styles.hatena}`}>
-                      <a className={styles.sns_list_link} href="https://b.hatena.ne.jp/entry/panel/?url=<?php echo get_the_permalink();?>&btitle=<?php echo get_the_title();?>">
-                        <i className={`${styles.sns_list_ico} ${styles.fab} ${styles.fa_hatebu}`}></i><span>ブックマーク</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <Sns />
               {/* <p className={styles.category}>{blog.category && blog.category.name}</p> */}
               <p className={styles.category}>
                         {category.map((category) => (
@@ -76,7 +52,7 @@ export default function BlogId({ blog, category }) {
                 </div>
               </div>
               <button><Link href={`/`}>TOPへ戻る</Link></button>
-            <div className={styles.article_bonus}></div>
+              <div className={styles.article_bonus}></div>
             </div>
             <Side />
           </div>
